@@ -4,7 +4,7 @@ import module
 
 
 # read trade history file
-csv_path = "trade_history_20220724095343.csv"
+csv_path = "history/trade_history_20220826103332.csv"
 trade_df = pd.read_csv(csv_path, header=0)
 trade_df["取引日時"] = pd.to_datetime(trade_df["取引日時"], infer_datetime_format=True)
 trade_df = trade_df.sort_values(by="取引日時", ascending=True)
